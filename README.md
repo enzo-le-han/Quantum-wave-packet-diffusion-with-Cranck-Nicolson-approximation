@@ -1,5 +1,3 @@
-# Quantum wave packet diffusion with Cranck-Nicolson approximation
-
 These two programs generate quantum Gaussian wave packets, give them an impulse, and then pass them through either a double slit or a crystal lattice using the Crank-Nicolson approximation.
 For each of the two programs, you need to create a folder and provide the path to that folder at the beginning of the codes. The program saves an image per iteration in this folder to create an .mp4 video at the end of the simulation.
 
