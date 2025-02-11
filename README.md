@@ -70,7 +70,7 @@ We set:
 $$\lambda^{+}_k = 1+4\alpha +\frac{i\Delta t}{2}V^{n+1}_{i,j}$$
 </p>
 
-Example of the form of matrix A and vector $\\Psi^{n+1}\$ pour N=4 :
+Example of the form of matrix A and vector $\\Psi^{n+1}\$ for N=4 :
 
 <p>
   $$
