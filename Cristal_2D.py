@@ -149,7 +149,7 @@ for n in range(Nt):
 
 
 import os
-from moviepy.editor import ImageSequenceClip
+from moviepy import ImageSequenceClip
 
 print(os.getcwd())
 image_folder = path
@@ -157,13 +157,13 @@ image_folder = path
 os.chdir(image_folder)
  
 images = [img for img in os.listdir(image_folder)
-        if  img.endswith(".jpg") or
-            img.endswith(".jpeg") or
-            img.endswith("png")]
-     
+        if  img.endswith("png")]
+
+images.sort(key=lambda x: int(x.split('.')[0]))
+
 print(images) 
   
 clip = ImageSequenceClip(images, fps = 40)
 
-clip.ipython_display(width = 360)
+clip.write_videofile("video.mp4")
 
